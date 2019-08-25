@@ -14,7 +14,9 @@ export const fonts = {
   size: {
     verySmall: "12px",
     small: "14px",
-    medium: "16px"
+    medium: "16px",
+    large: "24px",
+    veryLarge: "32px"
   },
   weight: {
     normal: 500,

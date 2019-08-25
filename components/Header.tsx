@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { dimensions, colors, animations } from "../common/theme";
 
-export default function Header() {
+export function Header() {
   return (
     <header className="header">
       <div className="header_main">
         <h1 className="header_title">
-          <Link href="">Digital Journal</Link>
+          <Link href="/">Digital Journal</Link>
         </h1>
         <div>|</div>
         <h2 className="header_subtitle">Create A Note</h2>
@@ -17,7 +17,6 @@ export default function Header() {
       </div>
       <style jsx>{`
         .header {
-          padding: ${dimensions.gutter};
           display: flex;
           justify-content: space-between;
           align-items: center;

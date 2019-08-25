@@ -43,7 +43,6 @@ export function CreateNote(props: IProps) {
       </div>
       <style jsx>{`
         .fields {
-          padding: ${dimensions.gutter};
           display: grid;
           grid-template-rows: auto auto auto auto;
           grid-gap: ${dimensions.gutter};

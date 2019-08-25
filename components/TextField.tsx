@@ -5,12 +5,20 @@ interface IProps {
   label: string;
   value: string;
   required?: boolean;
+  type?: "text" | "password";
   textarea?: boolean;
   onChange: (value: string) => void;
 }
 
 export function TextField(props: IProps) {
-  const { label, value, onChange, required = false, textarea = false } = props;
+  const {
+    label,
+    value,
+    onChange,
+    required = false,
+    textarea = false,
+    type = "text"
+  } = props;
   const idRef = React.useRef(`id_${Math.random()}`);
   function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
     onChange(e.target.value);
@@ -38,7 +46,7 @@ export function TextField(props: IProps) {
           id={idRef.current}
           value={value}
           required={required}
-          type="text"
+          type={type}
           onChange={handleInputChange}
           className="TextField__field"
         />
