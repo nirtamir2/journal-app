@@ -1,0 +1,7 @@
+export const DB_CONNECTION_DEVELOPMENT =
+  process.env.DB_CONNECTION ||
+  "DB_CONNECTION_DEVELOPMENT";
+export const DB_CONNECTION_PRODUCTION =
+  process.env.DB_CONNECTION || "DB_CONNECTION_PRODUCTION";
+export const JWT_SECRET = process.env.JWT_SECRET || "JWT_SECRET";
+export const JWT_ISSUER = process.env.JWT_ISSUER || "JWT_ISSUER";
